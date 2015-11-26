@@ -1,0 +1,31 @@
+---
+title: "About data"
+author: "csiu"
+date: "November 25, 2015"
+output: 
+    html_document:
+        keep_md: yes
+---
+## Data source
+The data ([pdf](buildings_2015-11-26-05-54-27.pdf), [csv](tallest100buildings.csv)) was downloaded from [**The Skyscraper Center:** The Global Tall Building Database of the CTBUH](http://www.skyscrapercenter.com/buildings) on November 25, 2015.
+
+## Tidying the data
+```{r message=FALSE}
+library(dplyr)
+library(readr)
+```
+
+```{r}
+raw_file <- "tallest100buildings.csv"
+
+raw <- read_csv(raw_file)
+
+colnames(raw) <- c("rank", "building_name", "city", 
+                   "height_m", "height_ft", "floors", 
+                   "year_completed", "material", "use")
+
+(raw <- raw %>% 
+  mutate(city = as.factor(city),
+         #year_completed = as.factor(year_completed),
+         material = as.factor(material)))
+```
