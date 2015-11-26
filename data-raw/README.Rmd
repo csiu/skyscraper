@@ -29,3 +29,9 @@ colnames(raw) <- c("rank", "building_name", "city",
          #year_completed = as.factor(year_completed),
          material = as.factor(material)))
 ```
+
+Write out data:
+```{r}
+# write_csv(raw, "../inst/skyscraper.csv")
+```
+

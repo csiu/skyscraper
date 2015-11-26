@@ -46,3 +46,10 @@ colnames(raw) <- c("rank", "building_name", "city",
 ## Variables not shown: height_ft (dbl), floors (int), year_completed (int),
 ##   material (fctr), use (chr).
 ```
+
+Write out data:
+
+```r
+# write_csv(raw, "../inst/skyscraper.csv")
+```
+
