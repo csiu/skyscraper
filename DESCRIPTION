@@ -1,11 +1,16 @@
 Package: skyscraper
-Type: Package
-Title: What the Package Does (Title Case)
+Title: 100 Tallest Completed Buildings in the World
 Version: 0.1
 Date: 2015-11-25
-Authors@R: person("First", "Last", email = "first.last@example.com", role = c("aut", "cre"))
-Description: More about what it does (maybe more than one line)
-License: What license is it under?
+Authors@R: person("Celia", "Siu", email = "csiu@bcgsc.ca", role = c("aut", "cre"))
+Description: Who doesn't want to randomly know where the tallest building in the world is?
+    Scraped from The Skyscraper Center, I present to you the list of
+    100 Tallest Completed Buildings in the World ... along with information about
+    which city the building resides in, how high is it, how many floors does it have,
+    when was it completed, what material is it made of, and for what purpose does it serve.
+License: CC0
 LazyData: TRUE
+URL: https://github.com/csiu/skyscraper,
+    http://www.skyscrapercenter.com/buildings
 RoxygenNote: 5.0.0
 Suggests: testthat
