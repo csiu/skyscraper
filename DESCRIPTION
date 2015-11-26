@@ -8,6 +8,8 @@ Description: Who doesn't want to randomly know where the tallest building in the
     100 Tallest Completed Buildings in the World ... along with information about
     which city the building resides in, how high is it, how many floors does it have,
     when was it completed, what material is it made of, and for what purpose does it serve.
+Depends:
+    R (>= 2.10)
 License: CC0
 LazyData: TRUE
 URL: https://github.com/csiu/skyscraper,
